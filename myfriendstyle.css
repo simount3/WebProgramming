@@ -1,0 +1,102 @@
+main {
+    padding: 2em;
+    background-color: #fff;
+    max-width: 900px;
+    margin: 2em auto;
+    margin-bottom: 5em;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+h2 {
+    color: #f23f56;
+    font-size: 1.5em;
+    margin-bottom: 1em;
+}
+.notice {
+    font-size: 1em; 
+    color: darkgray;
+    font-weight: bold; 
+    text-align: center; 
+    padding: 0;
+    margin: 0;
+}
+.friend-requests {
+    padding-bottom: 2em;
+    border-bottom: 1px solid #000;
+}
+.friends-list {
+    padding-top: 1em;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1em;
+}
+.request-results th:last-child, .request-results td:last-child {
+    width: 210px;
+}
+table th, table td {
+    text-align: left;
+    padding: 0.8em;
+    border-bottom: 2px solid #ddd;
+}
+table th {
+    background-color: #f23f56;
+    color: #fff;
+}
+.action-buttons {
+    display: flex;
+    gap: 1em;
+}
+.accept-button {
+    background-color: #26de57;
+    color: #fff;
+    padding: 0.65em 1.2em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-size: 0.9em;
+}
+.decline-button {
+    background-color: #f21d2f;
+    color: #fff;
+    padding: 0.65em 1.2em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-size: 0.9em;
+}
+.accept-button:hover {
+    background-color: #1da341;
+}
+.decline-button:hover {
+    background-color: #c91a29;
+}
+@media (max-width: 768px) {
+    .list-results table {
+        display: block;
+    }
+    .list-results th, .list-results td {
+        display: block;
+        position: relative;
+        padding: 0.3em;
+    }
+    .list-results th:last-child, .list-results td:last-child {
+        border-bottom: 2.5px solid #000;
+    }
+    .request-results th, .request-results td {
+        width: 10px;
+        padding: 0.3em;
+    }
+    .request-results th:last-child, .request-results td:last-child {
+        width: 20px;
+    }
+    .action-buttons {
+        display: block;
+    }
+    .accept-button {
+        margin-bottom: 0.2em;
+    }
+}

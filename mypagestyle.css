@@ -1,0 +1,49 @@
+main {
+    padding: 2em;
+    max-width: 700px;
+    margin: auto;
+    margin-top: 1.5em;
+    margin-bottom: 5em;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+.myprofile table {
+    width: 100%;
+    border-collapse: collapse;
+}
+.myprofile th, .myprofile td {
+    text-align: left;
+    padding: 0.8em;
+    border-bottom: 2px solid #ddd;
+}
+.myprofile th {
+    background-color: #f23f56;
+    color: #fff;
+    width: 5em;
+}
+.edit-container, .logout-container {
+    text-align: center;
+    margin-top: 1.8em;
+}
+.edit-button, .logout-button {
+    display: inline-block;
+    background-color: #f23f56;
+    color: #fff;
+    padding: 0.7em 1.6em;
+    font-size: 0.9em;
+    text-decoration: none;
+    border-radius: 5px;
+    text-transform: uppercase;
+}
+.edit-button:hover, .logout-button:hover {
+    background-color: #ffd6db;
+    color: #f23f56;
+    border-color: #f23f56;
+}
+
+@media (max-width: 768px) {
+    .myprofile th, .myprofile td {
+        padding: 0.3em;
+    }
+}

@@ -1,0 +1,95 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffefeb;
+    margin: 0;
+    padding: 0;
+}
+header {
+    background-color: #ffcabd;
+    padding: 0.5em 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header .logo-container {
+    display: flex;
+}
+header .logo {
+    margin-left: 3em;
+    margin-right: 1em;
+}
+header h1 {
+    font-weight: bolder;
+    font-size: 2.4em;
+    color: #f23f56;
+}
+.highlight {
+    color: #ad0342;
+}
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+header nav ul li {  
+    margin-left: 2em;
+}
+header nav ul li:last-child {
+    margin-right: 3em;
+}
+header nav ul li a {
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #f23f56;
+}
+header nav ul li a:hover {
+    color: #ad0342;
+}
+.footer-container {
+    display: flex;
+    justify-content: center;
+    background-color: #ffcabd;
+    color: #f23f56;
+    text-align: center;
+    align-items: center;
+    font-size: 1em;
+    padding: 0.2em 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+.footer-contact {
+    margin-left: 1.5em;
+    margin-right: 1.5em;
+}
+.rights {
+    margin-left: 1.5em;
+}
+.footer-contact a {
+    text-transform: uppercase;
+    color: #f23f56;
+}
+.footer-contact a:hover {
+    color: #ffefeb;
+}
+
+@media (max-width: 768px) {
+    .logo img {
+        width: 60px;
+    }
+    header h1 {
+        font-size: 1.8em;
+    }
+    header {
+        display: block; 
+    }
+    nav ul li {
+        font-size: 15px;
+        margin: 0.3em;
+    }
+    .footer-container {
+        flex-direction: column;
+    }
+}
